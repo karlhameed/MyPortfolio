@@ -120,7 +120,7 @@ export default function Home() {
             {/* ABOUT ME */}
             <div>
               <h2 className="text-2xl font-bold border-b border-gray-700 pb-3 mb-4 flex items-center gap-2 text-white">
-                <div>👤 About me</div>
+                <div>About me</div>
               </h2>
               <div className="space-y-4 text-gray-300 text-base leading-relaxed">
                 <p>
@@ -167,7 +167,7 @@ export default function Home() {
           <section id="skills" className="p-10 space-y-6 bg-[#0f172a] scroll-mt-80">
             <div>
               <h2 className="text-2xl font-bold border-b border-gray-700 pb-3 mb-4 flex items-center gap-2 text-white">
-                <div>⚙️ Tech Stack</div>
+                <div>Tech Stack</div>
               </h2>
               <div className="grid grid-cols-2 gap-4">
                 <SkillIconImage label="Java" src="/Java.webp" />
@@ -182,7 +182,7 @@ export default function Home() {
             {/* LANGUAGES */}
             <div id="languages" className="scroll-mt-80">
               <h2 className="text-2xl font-bold border-b border-gray-700 pb-3 mb-4 flex items-center gap-2 text-white">
-                <div>🗣️ Languages</div>
+                <div>Languages</div>
               </h2>
               <div className="grid grid-cols-3 gap-4">
                 <LanguageIconImage label="English" src="/us.webp" />
@@ -199,7 +199,7 @@ export default function Home() {
           {/* EDUCATION */}
           <div id="education" className="scroll-mt-80">
             <h2 className="text-2xl font-bold border-b border-gray-700 pb-3 mb-5 flex items-center gap-2 text-white">
-              <div>🎓 Education</div>
+              <div>Education</div>
             </h2>
             <div className="bg-[#1e293b] border border-gray-600 rounded-lg p-6 shadow-md space-y-6 hover:scale-105 transition-transform duration-300">
               {/* College */}
@@ -247,7 +247,7 @@ export default function Home() {
           {/* PROJECTS */}
           <div id="projects" className="scroll-mt-80">
             <h2 className="text-2xl font-bold border-b border-gray-700 pb-3 mb-5 flex items-center gap-2 text-white">
-              <div>💻 Projects</div>
+              <div>Projects</div>
             </h2>
             
             {/* Project 1 */}
