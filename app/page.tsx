@@ -172,7 +172,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <SkillIconImage label="Java" src="/Java.webp" />
                 <SkillIconImage label="JavaScript" src="/Javascript.webp" />
-                <SkillIconImage label="Next.js" src="/Next.js" />
+                <SkillIconImage label="Next.js" src="/next-js-logo-icon.webp" />
                 <SkillIconImage label="HTML" src="/html.webp" />
                 <SkillIconImage label="CSS" src="/CSS.webp" />
                 <SkillIconImage label="MySQL" src="/MySQL.webp" />
