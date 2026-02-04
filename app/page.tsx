@@ -148,8 +148,8 @@ export default function Home() {
                         <span className="absolute text-[7rem] text-gray-800 opacity-10 right-2 bottom-0 font-bold select-none">2</span>
                       </div>
                       <div className="bg-[#181f2a] rounded-lg p-6 flex flex-col items-start justify-center relative overflow-hidden border border-gray-700">
-                        <span className="text-4xl font-bold text-white z-10">10</span>
-                        <span className="text-sm text-gray-300 mt-2 z-10">Years of Post-Secondary Education</span>
+                        <span className="text-4xl font-bold text-white z-10">15+</span>
+                        <span className="text-sm text-gray-300 mt-2 z-10">Years of Education</span>
                         <span className="absolute text-[7rem] text-gray-800 opacity-10 right-2 bottom-0 font-bold select-none">10</span>
                       </div>
                       <div className="bg-[#181f2a] rounded-lg p-6 flex flex-col items-start justify-center relative overflow-hidden border border-gray-700">
