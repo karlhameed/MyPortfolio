@@ -13,19 +13,19 @@ export default function Home() {
         {/* TOP NAV BAR */}
         <nav className="bg-[#1e293b] border-b border-gray-700 p-4 flex justify-center gap-8 text-sm font-semibold tracking-wide text-white rounded-t-lg flex-wrap">
           <a href="#about" className="cursor-pointer hover:text-indigo-400 hover:bg-white/5 px-3 py-1 rounded transition-all duration-200">
-            👤 About Me
+            About Me
           </a>
           <a href="#skills" className="cursor-pointer hover:text-indigo-400 hover:bg-white/5 px-3 py-1 rounded transition-all duration-200">
-            ⚙️ Tech Stack
+            Tech Stack
           </a>
           <a href="#languages" className="cursor-pointer hover:text-indigo-400 hover:bg-white/5 px-3 py-1 rounded transition-all duration-200">
-            🗣️ Languages
+            Languages
           </a>
           <a href="#education" className="cursor-pointer hover:text-indigo-400 hover:bg-white/5 px-3 py-1 rounded transition-all duration-200">
-            🎓 Education
+            Education
           </a>
           <a href="#projects" className="cursor-pointer hover:text-indigo-400 hover:bg-white/5 px-3 py-1 rounded transition-all duration-200">
-            💻 Projects
+            Projects
           </a>
         </nav>
 
@@ -253,7 +253,7 @@ export default function Home() {
             {/* Project 1 */}
             <div className="bg-[#1e293b] border border-gray-600 rounded-lg p-6 shadow-md mb-6 hover:scale-105 transition-transform duration-300">
               <h3 className="font-bold text-xl text-white mb-2">Calculator App</h3>
-              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">📅 2023 - 2024</p>
+              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">2023 - 2024</p>
 
               <ul className="list-disc list-inside text-gray-300 space-y-2 marker:text-indigo-400">
                 <li>Developed a functional calculator application for Android platform using Java and Android Studio.</li>
@@ -265,7 +265,7 @@ export default function Home() {
             {/* Project 2 */}
             <div className="bg-[#1e293b] border border-gray-600 rounded-lg p-6 shadow-md mb-6 hover:scale-105 transition-transform duration-300">
               <h3 className="font-bold text-xl text-white mb-2">Student Enrollment System</h3>
-              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">📅 2025</p>
+              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">2025</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2 marker:text-indigo-400">
                 <li>Built a comprehensive system for managing student enrollment data using Java and MySQL.</li>
                 <li>Implemented database operations for storing and retrieving student information.</li>
@@ -276,7 +276,7 @@ export default function Home() {
             {/* Project 3 */}
             <div className="bg-[#1e293b] border border-gray-600 rounded-lg p-6 shadow-md mb-6 hover:scale-105 transition-transform duration-300">
               <h3 className="font-bold text-xl text-white mb-2">Parking Reservation System</h3>
-              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">📅 2025</p>
+              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">2025</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2 marker:text-indigo-400">
                 <li>Developed a parking reservation system for efficient space management using Java and MySQL.</li>
                 <li>Implemented real-time availability tracking and reservation functionality.</li>
@@ -287,7 +287,7 @@ export default function Home() {
             {/* Project 4 */}
             <div className="bg-[#1e293b] border border-gray-600 rounded-lg p-6 shadow-md mb-6 hover:scale-105 transition-transform duration-300">
               <h3 className="font-bold text-xl text-white mb-2">My Portfolio</h3>
-              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">📅 2026</p>
+              <p className="text-sm font-bold text-indigo-300 mb-3 bg-indigo-900/30 inline-block px-2 py-1 rounded">2026</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2 marker:text-indigo-400">
                 <li>Developed responsive user interfaces using Next.js and Tailwind CSS.</li>
                 <li>Implemented backend logic and database connections for real-time applications.</li>
@@ -365,13 +365,13 @@ function ContactModal({ onClose }: { onClose: () => void }) {
     {
       title: 'LinkedIn',
       value: 'karl-hameed-c-1b2169252',
-      icon: '🔗',
+      iconImg: '/linkedinlogo.webp',
       action: () => window.open('https://linkedin.com/in/karl-hameed-c-1b2169252', '_blank')
     },
     {
       title: 'GitHub',
       value: 'karlhameed',
-      icon: '💻',
+      iconImg: '/github logo.webp',
       action: () => window.open('https://github.com/karlhameed', '_blank')
     }
   ];
@@ -397,7 +397,11 @@ function ContactModal({ onClose }: { onClose: () => void }) {
               className="w-full p-4 bg-[#0f172a] border border-gray-600 rounded-lg hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 text-left"
             >
               <div className="flex items-start gap-3">
-                <span className="text-2xl">{method.icon}</span>
+                {method.iconImg ? (
+                  <img src={method.iconImg} alt={method.title + ' icon'} className="w-7 h-7 object-contain" />
+                ) : (
+                  <span className="text-2xl">{method.icon}</span>
+                )}
                 <div>
                   <h3 className="font-semibold text-white text-sm">{method.title}</h3>
                   <p className="text-gray-400 text-xs mt-1">{method.value}</p>
